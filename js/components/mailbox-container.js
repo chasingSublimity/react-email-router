@@ -4,6 +4,6 @@ import MailBox from './mailbox';
 
 export default function MailBoxContainer(props) {
 	return (
-		<MailBox emails={EMAILS.inbox} />
+		<MailBox emails={EMAILS[props.params.mailbox_name]} />
 	);
 }

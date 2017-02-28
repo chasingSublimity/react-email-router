@@ -9,8 +9,7 @@ import MailBoxContainer from './components/mailbox-container';
 const routes = (
 	<Router history={hashHistory}>
 		<Route path='/mail' component={App}>
-			<IndexRoute component={MailBoxContainer} />
-			<Route path=':mailbox_name' component={EmailContainer} />
+			<Route path=':mailbox_name' component={MailBoxContainer} />
 		</Route>
 	</Router>
 );

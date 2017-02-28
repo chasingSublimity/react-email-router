@@ -5,13 +5,15 @@ export default function Email(props) {
 	return (
 		<div>
 			<strong>
-				<Link to={'/:mailbox_name' + props.id}>
-				{props.from}
-				{props.to}
-				{props.title}
-				</Link>
+				<div>
+				From: {props.from}
+				<br/>
+				To: {props.to}
+				<br/>
+				Subject: {props.title}
+				</div>
 			</strong>
-			&nbsp;
+			<br/>
 			{props.content}
 		</div>
 	);
